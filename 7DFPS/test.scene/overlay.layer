@@ -1,0 +1,8 @@
+layer = {
+  elements = {
+    oops = {
+      modifiers = {} //modifiers
+      uuid = "4ecf4b0e-afcc-47c3-bc08-196c4364ff16"
+    } //oops
+  } //elements
+} //layer

@@ -1,0 +1,52 @@
+material_basis = {
+    vertex_format = "luxe.textured"
+    shaders = {
+      vertex = { library="luxe: shaders" function="vert_color_uv" }
+      fragment = { library="luxe: shaders" function="textured_uv_color" }
+    } 
+    depth_test = true
+    depth_write = true
+    depth_compare = "less_equal"
+    stencil_test = false
+    write_mask = { red=true green=true blue=true alpha=true }
+    blending = true
+    alpha_blend = "add"
+    rgb_blend = "add"
+    src_alpha = "one"
+    src_rgb = "one"
+    dest_alpha = "one"
+    dest_rgb = "one"
+    blend_color = [0 0 0 0]
+    cull = "none"
+    winding = "counter_clockwise"
+    layers = ["default"]
+    inputs = {
+        sprite.image = {
+            type = "image"
+            value = {
+                type = "image2D"
+                sampler_state = "nearest_clamp"
+            }
+        }
+        sprite.uv = {
+            type = "float4"
+            value = [0 0 1 1]
+        }
+        sprite.uv_flip = {
+            type = "bool2"
+            value = [false false]
+        }
+        sprite.color = {
+            type = "float4"
+            value = [1 1 1 1]
+        }
+        sprite.skew = {
+            type = "float2"
+            value = [0 0]
+        }
+    }
+}
+preview = {
+  hint = "sprite"
+  image = "sprite.image"
+}
