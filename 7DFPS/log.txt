@@ -1,4 +1,4 @@
-luxe / Engine / Fri Dec  3 20:48:02 2021
+luxe / Engine / Tue Dec  7 18:22:14 2021
 luxe / Engine / path is `/Users/richieryan/Desktop/demos/7DFPS`
 luxe / Engine / 2021.0.9
 luxe / paths / root / located at `/Users/richieryan/Library/Application Support/luxeengine/luxe/.luxe`
@@ -13,7 +13,7 @@ luxe / dev / parcel / adding dependency `luxe` @ `2021.0.9`
 luxe / dev / parcel /   - adding scripts from `/Users/richieryan/Library/Application Support/luxeengine/luxe/.luxe/modules/luxe/2021.0.9/api`
 luxe / dev / parcel /   - adding assets from `/Users/richieryan/Library/Application Support/luxeengine/luxe/.luxe/modules/luxe/2021.0.9/assets`
 luxe / dev / images / adding unreferenced sources...
-luxe / dev / parcel / entry parcel generated in 71.84683403465897ms
+luxe / dev / parcel / entry parcel generated in 35.35989602096379ms
 luxe / dev / compiler / compiling dev content to `.luxe/` ...
 luxe / dev / compiler / luxe runtime `2021.0.9` at path `/Users/richieryan/Library/Application Support/luxeengine/luxe/.luxe/modules/luxe/2021.0.9` ...
  + atlas - 0 found
@@ -27,7 +27,7 @@ luxe / dev / compiler / luxe runtime `2021.0.9` at path `/Users/richieryan/Libra
  + render - 1 found
  + tiles - 0 found
  + font - 1 found
- + anim - 0 found
+ + anim - 1 found
  + scene - 1 found
   - scene `test.scene` > `.luxe/test.f4ab78bf.scene`
    - 2 layer/s, 2 need to compile
@@ -46,27 +46,28 @@ luxe / dev / compiler / luxe runtime `2021.0.9` at path `/Users/richieryan/Libra
 prototype / data / size / was 4 and calculated 4 
  + material_basis - 14 found
  + prototype - 0 found
- + material - 10 found
+ + material - 12 found
  + physics - 2 found
  + script - 119 found
  + material_input - 0 found
- + image - 5 found
+ + image - 27 found
  + input - 1 found
  + ui - 28 found
 luxe / dev / data compile times:
-  -  / font / spent `17.8366ms`
-  -  / shaders / spent `23.26478ms`
-  -  / material / spent `8.13311ms`
-  -  / scene / spent `102.12757ms`
-  -  / physics / spent `2.49849ms`
-  -  / material_basis / spent `23.32576ms`
-  -  / settings / spent `5.69266ms`
-  -  / script / spent `771.66698ms`
-  -  / image / spent `23.41129ms`
-  -  / input / spent `3.36843ms`
-  -  / render / spent `4.01732ms`
-  -  / ui / spent `25.17238ms`
-luxe / dev / compiler / compile completed | `184 assets` | `1032.947069965303ms`
+  -  / material / spent `3.19974ms`
+  -  / shaders / spent `9.81234ms`
+  -  / physics / spent `0.34234ms`
+  -  / settings / spent `3.88444ms`
+  -  / script / spent `509.94033ms`
+  -  / render / spent `1.15144ms`
+  -  / font / spent `7.96902ms`
+  -  / anim / spent `1.64538ms`
+  -  / scene / spent `67.7182ms`
+  -  / material_basis / spent `8.60206ms`
+  -  / image / spent `18.05956ms`
+  -  / input / spent `20.51937ms`
+  -  / ui / spent `8.40731ms`
+luxe / dev / compiler / compile completed | `209 assets` | `666.9631398981437ms`
 luxe / dev / build / success
 luxe / project / info:
   - name: `Strange House`
@@ -85,7 +86,7 @@ luxe / opengl / initializing
 luxe / opengl / request / 2x antialiasing (engine.render.antialiasing)
 luxe / opengl / request / core context (engine.render.opengl.core)
 luxe / opengl / request / 3.3 (engine.render.opengl.major/minor)
-luxe / sdl / creating window at `448,274` with size `544x352`
+luxe / sdl / creating window at `312,186` with size `816x528`
 luxe / opengl / request / vsync? true (engine.render.vsync)
 luxe / opengl / versions / GL `4.1 INTEL-14.7.18` - GLSL `4.10`
 luxe / opengl / request / debug logging (engine.render.opengl.debug_level = 3)
@@ -96,8 +97,30 @@ luxe / assets / loading `entry parcel` ...
   luxe / assets / loading / image `luxe: image/empty`
   luxe / assets / loading / image `luxe: image/logo`
   luxe / assets / loading / image `luxe: image/logo.sprite`
+  luxe / assets / loading / image `assets/image/Case`
   luxe / assets / loading / image `assets/image/Frame`
-  luxe / assets / loading / image `assets/image/mock`
+  luxe / assets / loading / image `assets/image/Log`
+  luxe / assets / loading / image `assets/image/battle_LifeBar`
+  luxe / assets / loading / image `assets/image/battle_ammo`
+  luxe / assets / loading / image `assets/image/battle_heldItem`
+  luxe / assets / loading / image `assets/image/battle_jumpscare`
+  luxe / assets / loading / image `assets/image/battle_monstersL`
+  luxe / assets / loading / image `assets/image/battle_monstersM`
+  luxe / assets / loading / image `assets/image/battle_monstersS`
+  luxe / assets / loading / image `assets/image/battle_stage`
+  luxe / assets / loading / image `assets/image/battle_turnCounter`
+  luxe / assets / loading / image `assets/image/explore_inventory`
+  luxe / assets / loading / image `assets/image/explore_room`
+  luxe / assets / loading / image `assets/image/explore_stairs`
+  luxe / assets / loading / image `assets/image/maze_coffinMan`
+  luxe / assets / loading / image `assets/image/maze_doorway`
+  luxe / assets / loading / image `assets/image/maze_hallway`
+  luxe / assets / loading / image `assets/image/maze_jumpscare`
+  luxe / assets / loading / image `assets/image/maze_video`
+  luxe / assets / loading / image `assets/image/state_credits`
+  luxe / assets / loading / image `assets/image/state_finale`
+  luxe / assets / loading / image `assets/image/state_gameover`
+  luxe / assets / loading / image `assets/image/state_title`
   luxe / assets / loading / basis `luxe: material_basis/font` 3777439469
   luxe / assets / loading / basis `luxe: material_basis/line` 1956587066
   luxe / assets / loading / basis `luxe: material_basis/mesh_debug` 538330473
@@ -121,8 +144,10 @@ luxe / assets / loading `entry parcel` ...
   luxe / assets / loading / material `luxe: material/mesh_solid`
   luxe / assets / loading / material `luxe: material/solid`
   luxe / assets / loading / material `luxe: material/sprite.solid`
+  luxe / assets / loading / material `assets/material/case_mat`
   luxe / assets / loading / material `assets/material/frame_mat`
-  luxe / assets / loading / material `assets/material/mock_mat`
+  luxe / assets / loading / material `assets/material/log`
+  luxe / assets / loading / material `assets/material/state_title`
   luxe / assets / loading / bytes `luxe: anim/material.track.lx`
   luxe / assets / loading / bytes `luxe: anim/sprite.track.lx`
   luxe / assets / loading / bytes `luxe: anim/sprite.value.track.lx`
@@ -138,6 +163,7 @@ luxe / assets / loading `entry parcel` ...
   luxe / assets / loading / bytes `luxe: asset/import/sprite.import.lx`
   luxe / assets / loading / physics `luxe: physics/default.body`
   luxe / assets / loading / physics `luxe: physics/default.collider`
+  luxe / assets / loading / anim `anim/title`
   luxe / assets / loading / scene `test`
   luxe / assets / loading / input `outline/inputs`
   luxe / assets / loading / ui `luxe: asset/import/image.import`
@@ -168,11 +194,11 @@ luxe / assets / loading `entry parcel` ...
   luxe / assets / loading / ui `luxe: ui/editor.panel.progress`
   luxe / assets / loading / ui `luxe: ui/editor.panel.slider`
   luxe / assets / loading / ui `luxe: ui/editor.panel.text`
-luxe / assets / loaded `entry parcel` with `77 items` in `92.35466300742701ms`
+luxe / assets / loaded `entry parcel` with `102 items` in `91.10838000196964ms`
 luxe / runtime / setting log level `info`
 luxe / assets / input / loading entry input `outline/inputs`
 luxe / render / init renderer script `outline/renderer`
 game / render / init / ok
 ready!
-render size: 544 x 352 @ 1x
+render size: 816 x 528 @ 1x
 unready!

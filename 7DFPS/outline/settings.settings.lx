@@ -2,8 +2,8 @@ engine = {
   input.entry = "outline/inputs"
   runtime = {
     window = {
-      width = 544
-      height = 352
+      width = 816
+      height = 528
       resizable = false
       fullscreen = false
     }

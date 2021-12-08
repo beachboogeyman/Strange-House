@@ -1,0 +1,4 @@
+image = {
+  source = "assets/image/maze_jumpscare.png"
+  generate_mipmaps_at_load = false
+}

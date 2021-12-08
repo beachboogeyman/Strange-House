@@ -1,0 +1,21 @@
+animation = {
+  rate = 1
+  tracks = [
+    {
+      id = "title"
+      type = "luxe: anim/sprite"
+      options = {
+        material = "assets/material/state_title"
+        grid = [13 1] //grid
+        frames = [
+          {
+            index_end = 13
+            duration = 0.2
+            index = 1
+          }
+        ] //frames
+      } //options
+    }
+  ] //tracks
+  loop = false
+} //animation
